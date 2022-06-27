@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Gestion de Cotizaciones de Protesis y Medicamentos - Gestion Usuarios">
+    <meta name="keywords" content="consejo, ciencias, economicas, cotizaciones, concursos, protesis, medicamentos">
+    <link rel="icon" href="..\img\cpce.ico" type="img"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />    
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>Gestion de Usuarios</title>
+</head>
+
+<body>
+    <header class="container">
+        <section class="row"> 
+            <div class="col-md-12">         
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <a class="navbar-brand" href="index.html"><img src="../img/logo3.png" alt="CPCE"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="enconstruccion.html">Institucional</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Concursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="concursos.html">Medicamentos</a></li>
+                                    <li><a class="dropdown-item" href="concursos.html">Prótesis</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="documentacion.html">Documentación</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cotizaciones
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="cotizaciones.html">Presentar Cotización</a></li>
+                                    <li><a class="dropdown-item" href="seguimiento.html">Seguimiento</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gestionUsuarios.html">Gestión de Usuarios</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                            <button class="btn btn-outline-success" type="submit">Cerrar Sesión</button>
+                        </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>                
+    </header>  
+     
+    <main class="container">
+        <section class="row">
+            <section class="col-md-12 p-2">
+                <!-- <img src="../img/futuras/enconstruccion.png" style="width:600px"> -->
+                <img src="../img/futuras/enconstruccion.png">
+            </section>        
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="secc sobrenosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>A traves de esta página el CPCE pone a disposición una Plataforma para la Gestión de Cotizaciones de Prótesis y Medicamentos de Alto Costo</p>
+                <ul class="redesSociales">
+                    <li><a href="https://twitter.com/santiaguitog" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter text-dark mx-1"></i></a></li>
+                    <li><a href="https://www.facebook.com/santiago.gomez.144181/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook text-dark mx-1"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/santiago-daniel-gomez-33600a15/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin text-dark mx-1"></i></a></li>
+                    <li><a href="https://www.instagram.com/santi_._gomez/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram text-dark mx-1"></i></a></li>
+                </ul>
+            </div>
+            <div class="secc accesosDirectos">
+                <h2>Secciones</h2>
+                <ul>
+                    <li><a href="./secciones/concursos.html">Concursos</a></li>
+                    <li><a href="./secciones/cotizaciones.html">Cotizaciones</a></li>
+                    <li><a href="./secciones/seguimiento.html">Seguimiento</a></li>            
+                    <li><a href="./secciones/gestionUsuarios.html">Gestion Usuarios</a></li>            
+                </ul>
+            </div>    
+            <div class="secc contacto">
+                <h2>Contacto</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Hipótito Irigoyen 490<br>
+                            Córdoba, X5000JHR<br>Argentina
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:+5494688300">+54 9 4688300</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:info@cpcecba.org.ar">info@cpcecba.org.ar</a></p>
+                    </li>
+
+                </ul>
+            </div>    
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
+</body>
+
+
+</html>

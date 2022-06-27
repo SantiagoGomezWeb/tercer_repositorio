@@ -1,0 +1,284 @@
+// documentacion.html
+.requisitos {
+    @include tamanios(450px, 200px);
+    ol {
+        counter-reset: li;
+        }
+    a{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        margin: .5em 0;
+        background: #FFF;
+        color: #444;
+        text-decoration: none;
+        -moz-border-radius: .3em;
+        -webkit-border-radius: .3em;
+        border-radius: .3em;
+        &:hover{
+            background: #cbe7f8;
+            text-decoration:underline;
+        }
+        &:before{
+            content: '';
+            counter-increment: li;
+            position: absolute;
+            left: -1.3em;
+            top: 50%;
+            margin-top: -1em;
+            background: #87ceeb;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            border: .3em solid #fff;
+            text-align: center;
+            font-weight: bold;
+            -moz-border-radius: 2em;
+            -webkit-border-radius: 2em;
+            border-radius: 2em;
+            color:#FFF;
+        }
+    }
+}
+section#panelIzq{
+    grid-area: panelIzq;
+    font-family: $font-family-general;
+    background-color: map-get($colors,color-paneles);
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 5px;
+    }
+
+
+#requisitosClas {
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 50px;
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px;
+    color:map-get($colors,primary);
+    border: $box-general;
+}
+
+
+
+// gestionUsuarios.html
+.formUsuario{
+    width:450px;
+    padding:50px;
+    border-radius:10px;
+    margin:auto;
+    background-color:rgb(119, 174, 179);
+    label{
+        width:72px;
+        font-weight:bold;
+        display:inline-block;
+    } 
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]
+    {
+        width:180px;
+        padding:3px 10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;
+        margin:8px 10px;
+        display:inline-block;
+    }  
+    input[type="submit"]{
+        width:100%;
+        padding:8px 16px;
+        margin-top:32px;
+        border:1px solid #000;
+        border-radius:5px;
+        display:block;
+        color:#fff;
+        background-color:rgb(42, 40, 40);
+    }      
+    input[type="submit"]:hover{
+        cursor:pointer;
+    }                       
+}
+
+
+
+// cotizaciones.html
+section#panelCentral{
+    font-family: $font-family-general;
+    // background-color: map-get($colors,color-paneles);
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 2px;
+}
+
+section#Tarjetas{
+    font-family: $font-family-general;
+    background-color: map-get($colors,color-paneles);
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 2px;
+}
+
+section#panelCentralColor{
+    font-family: $font-family-general;
+    background-color: map-get($colors,color-paneles);
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 2px;
+}
+
+.Neon {
+    font-family: $font-family-general;
+    font-size: 14px;
+    color: #494949;
+    position: relative;
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }        
+    .Neon-input-dragDrop {
+        display: block;
+        width: 343px;
+        margin: 0 auto 25px auto;
+        padding: 25px;
+        color: #97A1A8;
+        background: #fff;
+        border: 2px dashed #C8CBCE;
+        text-align: center;
+        -webkit-transition: box-shadow 0.3s, border-color 0.3s;
+        -moz-transition: box-shadow 0.3s, border-color 0.3s;
+        transition: box-shadow 0.3s, border-color 0.3s;
+        .Neon-input-icon {
+            font-size: 48px;
+            margin-top: -10px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
+    .Neon-input-text 
+        h3 {
+            font-family: $font-family-general;
+            margin: 0;
+            font-size: 18px;
+            color:#000;
+        }
+        span {
+            font-size: 12px;
+        }
+        .Neon-input-choose-btn.blue {
+            color:map-get($colors,primary);
+            border: $box-general;
+        }
+        .Neon-input-choose-btn {
+            display: inline-block;
+            padding: 8px 8px;
+            outline: none;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: bold;
+            color: #2c4248;
+            border-radius: 3px;
+            border: 1px solid #c6c6c6;
+            vertical-align: middle;
+            background-color: #fff;
+            box-shadow: 0px 1px 5px rgba(0,0,0,0.05);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+}
+
+
+// seguimiento.html
+section#seguimientoSecc{
+    grid-area: seguimientoSecc;
+    font-family: $font-family-general;
+    background-color: map-get($colors,color-paneles);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+table {
+    border: 2px solid rgb(53, 4, 110);
+    border-collapse: collapse;
+    text-align: center;
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size: medium;
+    margin: 20px;
+    color: map-get($colors,color-borde);
+    th {
+        background: #F5F5F5 url() repeat-x;
+        padding: 0 .3em;
+        border: 1px solid #333;
+        line-height: 2em;            
+        }       
+        tr:hover {
+        background: #f3f3e2;
+        &:hover {
+            background: #FFFF66;
+            }
+        }
+    td{
+        border: 1px solid #333;
+        line-height: 2em;            
+        &:hover{
+            background-color: rgb(208, 246, 169);
+            }
+        }          
+    }
+
+    th.enviada {
+    background: #E6F3FF url(../img/PASO1.png) no-repeat left;
+    padding: 10px 60px;
+    }            
+    th.oc {
+    background: #E6F3FF url(../img/PASO2.png) no-repeat left;
+    padding: 10px 60px;
+    }              
+    th.factura {
+    background: #E6F3FF url(../img/PASO3.png) no-repeat left;
+    padding: 10px 60px;
+    }
+    th.pago {
+    background: #E6F3FF url(../img/PASO4.png) no-repeat left;
+    padding: 10px 60px;
+    }              
+
+    .fila {
+    text-align: left;
+    }
+    .par {
+    background-color:#FFFFCC;
+    }
+
+section#panelAbajo{
+    grid-area: panelAbajo;
+    font-family: $font-family-general;
+    background-color: map-get($colors,color-paneles);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    }       
+

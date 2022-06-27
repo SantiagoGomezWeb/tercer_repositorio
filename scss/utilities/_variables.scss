@@ -1,0 +1,21 @@
+$box-general: 1px solid #008BFF;
+$box-shadow-bottom: 0 2px 1px 0 rgba(0,0,0,2);
+
+$font-family-general: 'Roboto', sans-serif;
+
+
+//mapa de colores
+$colors:(
+    principal: #e8eeee,
+    primary:#0564b3,
+    primary-light:lighten(#0564b3,40%),
+    primary-dark:darken(#0564b3,10%),
+    subtitulos_adicional:#762f03,
+    text-light:(#0564b3,60%), 
+    text-dark:darken(#0564b3,40%),
+    letra-footer: #b8d9f5,
+    color-paneles:rgb(193, 207, 216),
+    color-borde: #05355c,
+    subtitulos:#054d89, 
+    footer:#7e97ac, 
+)
