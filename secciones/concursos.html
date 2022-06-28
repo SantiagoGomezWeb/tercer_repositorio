@@ -26,49 +26,48 @@
             <div class="col-md-12">         
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                        <a class="navbar-brand" href="index.html"><img src="../img/logo3.png" alt="CPCE"></a>
+                        <a class="navbar-brand" href="../index.html"><img src="../img/logo4.png" alt="CPCE"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="enconstruccion.html">Institucional</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Concursos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="concursos.html">Medicamentos</a></li>
-                                    <li><a class="dropdown-item" href="concursos.html">Prótesis</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="documentacion.html">Documentación</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Cotizaciones
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="cotizaciones.html">Presentar Cotización</a></li>
-                                    <li><a class="dropdown-item" href="seguimiento.html">Seguimiento</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gestionUsuarios.html">Gestión de Usuarios</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                            <button class="btn btn-outline-success" type="submit">Cerrar Sesión</button>
-                        </form>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="concursos.html">Concursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Concursos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="concursos.html">Concursos Vigentes</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="documentacion.html">Documentación</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Cotizaciones
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="cotizaciones.html">Presentar Cotización</a></li>
+                                        <li><a class="dropdown-item" href="seguimiento.html">Seguimiento</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gestionUsuarios.html">Gestión de Usuarios</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <!-- Con este botón cerraria la sesion -->
+                                <!-- Este fue un invento usando un boton bs pero aca iria js en un futuro ;-) -->
+                                <button class="btn btn-outline-success" type="submit"><a href="../index.html">Cerrar Sesion</a></button>
+                            </form>
                         </div>
                     </div>
                 </nav>
@@ -78,17 +77,16 @@
 
     <main class="container">
         <section class="row">
-            <!-- <section class="row"> -->
-                <section class="col-md-12 p-1">
-                    <div id="tituloGral">
-                        <h1 style="text-align:center">Concursos</h1>
-                    </div>
-                </section>
-            <!-- </section>     -->
+            <section class="col-md-12 p-1">
+                <div id="tituloGral">
+                    <h1 style="text-align:center">Concursos</h1>
+                </div>
+            </section>
         <section class="row">
             <section class="col-md-6 p-1 text-center" style="background-color: rgb(193, 207, 216);">
                 <div id="requisitosClas">
-                    <img src="../img/ortopedia.png" alt="protesis" height="250" width="250">
+                    <!-- <img src="../img/ortopedia.png" alt="protesis" height="250" width="250"> -->
+                    <img src="../img/protesis_chica.png" alt="protesis">
                     <legend id="leyendaBold">Concursos Protesis</legend>
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
@@ -106,7 +104,7 @@
             </section>
             <section class="col-md-6 p-1 text-center" style="background-color:rgb(190, 172, 165);">
                 <div id="requisitosClas">
-                    <img src="../img/medicamentos.png" alt="medicamentos" height="250" width="250">
+                    <img src="../img/medicamentos_chica.png">
                     <legend id="leyendaBold">Concursos Medicamentos</legend>
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>

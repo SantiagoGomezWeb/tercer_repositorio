@@ -432,3 +432,26 @@ h1 {
   width: 100%;
   background: linear-gradient(to right, black, #c0bdbd, black);
   white-space: nowrap; }
+
+h3 {
+  color: #1e0376;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: 2px 2px 2px #8383b8; }
+
+#centrador {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: red; }
+
+#imagenTarjetas {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
