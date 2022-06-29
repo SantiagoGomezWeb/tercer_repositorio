@@ -33,9 +33,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Concursos
@@ -78,25 +78,41 @@
             </section>
             <section class="col-md-6 mx-auto d-block" id="tituloBienvenida">
                 <h1>Bienvenidos</h1>
-                <h2>a la Plataforma online</h2>
-                <h3>de Gestión de Concursos y Cotizaciones</h3>
-                <h5>del Consejo Profesional de Ciencias Económicas</h5>
+                <h5>a la Plataforma online</h5>
+                <h3>de Gestión de Concursos<br>y<br>Cotizaciones</h3>
             </section>
         </section>
         <section class="row bg-light">
-            <section class="col-md-6" class="mx-auto d-block">
+            <section class="col-md-6 mx-auto d-block"> 
                 <!-- <img src="./img/futuras/medicamentos.png" href="./secciones/concursos.html" class="mx-auto d-block imagen"> -->
-                <a href="./secciones/concursos.html"><img src="./img/concursos.png" alt="Concursos" class="mx-auto d-block imagen"/></a>
+                <div class="contenedor">
+                    <a href="./secciones/concursos.html"><img src="./img/concursos.png" alt="Concursos" class="mx-auto d-block imagen"/></a>
+                </div>
             </section>
-            <section class="col-md-6" class="mx-auto d-block">
-                <!-- <img src="./img/futuras/protesis.png" href="./secciones/concursos.html" class="mx-auto d-block imagen"> -->
-                <a href="./secciones/cotizaciones.html"><img src="./img/cotizaciones.png" alt="Cotizaciones" class="mx-auto d-block imagen"/></a>
+            <section class="col-md-6 mx-auto my-auto d-block p-3"> 
+                <p id="leyendaComun">En esta sección encontrará todos los <span class="text-danger">Concursos de Precios</span> de Medicamentos
+                   de Alto Costo y Prótesis que el CPCE pone a dispocición de sus Proveedores</p>
             </section>
         </section>
-
+        <section class="row bg-light">
+            <section class="col-md-6 mx-auto d-block">
+                <div class="contenedor">
+                    <!-- <img src="./img/futuras/protesis.png" href="./secciones/concursos.html" class="mx-auto d-block imagen"> -->
+                    <a href="./secciones/cotizaciones.html"><img src="./img/cotizaciones.png" alt="Cotizaciones" class="mx-auto d-block imagen"/></a>
+                </div>
+            </section>            
+            <section class="col-md-6 mx-auto my-auto d-block p-3"> 
+                <p id="leyendaComun">Los Proveedores podrán encontrar en esta sección toda la info de un
+                    Concurso determinado:<br>
+                    <span class="text-danger">Productos requeridos</span><br>
+                    <span class="text-danger">Especificaciones Técnicas</span><br>
+                    <span class="text-danger">Cantidades Requeridas</span><br>
+                    Adicionalmente pueden subir los archivos para participar de las Cotizaciones</p>
+            </section>
+        </section>
         <div class="mx-auto d-block p-3" style="height: 550px; width: 500px; background-color: rgba(151, 166, 239, 0.1);">
             <div class="container-md>.container-md py-4 border p-3">
-                <h5><center>Contactenos</center></h5>
+                <h5>Contactenos</h5>
                 <form id="contactForm">
                     <div class="mb-3">
                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
