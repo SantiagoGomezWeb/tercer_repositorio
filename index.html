@@ -22,20 +22,20 @@
 </head>
 
 <body>
-    <header class="container">
+    <header class="container-fluid">
         <section class="row"> 
             <div class="col-md-12">         
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html"><img src="./img/logo4.png" alt="CPCE"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>                                
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Concursos
@@ -61,9 +61,9 @@
                                     <a class="nav-link" href="./secciones/gestionUsuarios.html">Gestión de Usuarios</a>
                                 </li>
                             </ul>
-                            <form class="d-flex">
-                                <button class="btn btn-outline-success" type="submit">Ingreso de Usuarios</button>
-                              </form>                            
+                          <button type="button" class="btn btn-success d-table my-5 mx-auto" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                            Ingreso de Usuarios
+                          </button>
                         </div>
                     </div>
                 </nav>
@@ -71,20 +71,21 @@
         </section>                
     </header>
 
-    <main class="container bg-light">
+    <main class="container">
         <section class="row justify-content-md-center bg-light">
-            <section class="col-md-6 mx-auto d-block">
-                <img src="./img/futuras/home1.png" style="width:600px">
-            </section>
-            <section class="col-md-6 mx-auto d-block" id="tituloBienvenida">
+            <section class="col-md-12 mx-auto my-center text-center">
                 <h1>Bienvenidos</h1>
+                <img src="./img/home.png" class="img-fluid" alt="Imagen Inicio">
+            </section>
+        </section>
+        <section class="row justify-content-md-center bg-light">
+            <section class="col-md-12 mx-auto d-block" id="tituloBienvenida">
                 <h5>a la Plataforma online</h5>
                 <h3>de Gestión de Concursos<br>y<br>Cotizaciones</h3>
             </section>
         </section>
         <section class="row bg-light">
             <section class="col-md-6 mx-auto d-block"> 
-                <!-- <img src="./img/futuras/medicamentos.png" href="./secciones/concursos.html" class="mx-auto d-block imagen"> -->
                 <div class="contenedor">
                     <a href="./secciones/concursos.html"><img src="./img/concursos.png" alt="Concursos" class="mx-auto d-block imagen"/></a>
                 </div>
@@ -97,7 +98,6 @@
         <section class="row bg-light">
             <section class="col-md-6 mx-auto d-block">
                 <div class="contenedor">
-                    <!-- <img src="./img/futuras/protesis.png" href="./secciones/concursos.html" class="mx-auto d-block imagen"> -->
                     <a href="./secciones/cotizaciones.html"><img src="./img/cotizaciones.png" alt="Cotizaciones" class="mx-auto d-block imagen"/></a>
                 </div>
             </section>            
@@ -112,7 +112,7 @@
         </section>
         <div class="mx-auto d-block p-3" style="height: 550px; width: 500px; background-color: rgba(151, 166, 239, 0.1);">
             <div class="container-md>.container-md py-4 border p-3">
-                <h5>Contactenos</h5>
+                <h4>Contactenos</h4>
                 <form id="contactForm">
                     <div class="mb-3">
                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
@@ -175,12 +175,43 @@
                         <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
                         <p><a href="mailto:info@cpcecba.org.ar">info@cpcecba.org.ar</a></p>
                     </li>
-
                 </ul>
             </div>    
         </div>
     </footer>
 
+    <!-- Modal Form -->
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ingreso de Usuarios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="Username">Nombre de Usuario<span class="text-danger">*</span></label>
+                        <input type="text" name="username" class="form-control" id="Username" placeholder="Ingrese Nombre Usuario">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password">Password<span class="text-danger">*</span></label>
+                        <input type="password" name="password" class="form-control" id="Password" placeholder="Ingrese Password">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                        <label class="form-check-label" for="remember">Recordarme</label>
+                        <a href="#" class="float-end">Recordar Contraseña</a>
+                    </div>
+                </div>
+                <div class="modal-footer pt-4">                  
+                    <button type="button" class="btn btn-success mx-auto w-100">Ingresar</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous">

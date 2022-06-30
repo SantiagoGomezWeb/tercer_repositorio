@@ -6,6 +6,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+#tituloGral {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  padding: 10px;
+  color: #0564b3; }
+
 .requisitos ol {
   counter-reset: li; }
 
@@ -70,7 +78,7 @@ section#panelIzq {
   padding: 50px;
   border-radius: 10px;
   margin: auto;
-  background-color: #77aeb3; }
+  background-color: #cfd3d4; }
   .formUsuario label {
     width: 72px;
     font-weight: bold;
@@ -244,36 +252,6 @@ section#panelAbajo {
   align-items: center;
   padding: 10px; }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.ttf"); }
-
-body {
-  background-color: #e8eeee; }
-
-.nav-link:hover {
-  background-color: #efef9e;
-  transition: 0.5s;
-  border-radius: 5px; }
-
-.contenedor:hover .imagen {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  filter: opacity(0.8);
-  cursor: pointer; }
-
-.contenedor {
-  overflow: hidden; }
-
-.header {
-  color: #36A0FF;
-  font-size: 27px;
-  padding: 10px; }
-
-.bigicon {
-  font-size: 35px;
-  color: #36A0FF; }
-
 footer {
   font-family: "Roboto", sans-serif;
   display: grid;
@@ -305,6 +283,10 @@ footer {
         background-color: #dc951b; }
     footer .container .secc p {
       color: #040404; }
+    footer .container .secc li {
+      font-family: "Advent Pro", sans-serif;
+      color: black;
+      font-size: large; }
 
 .redesSociales {
   margin: 20px;
@@ -332,7 +314,9 @@ footer {
 .accesosDirectos {
   position: relative; }
   .accesosDirectos li {
-    list-style: none; }
+    list-style: none;
+    font-weight: normal;
+    text-align: left; }
     .accesosDirectos li a {
       background: #e8eeee;
       color: #040404;
@@ -347,7 +331,8 @@ footer {
   .info li {
     display: grid;
     grid-template-columns: 30px 1fr;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    font-weight: normal; }
     .info li span {
       color: #040404; }
       .info li span:nth-child(1) {
@@ -367,6 +352,40 @@ footer {
   text-align: center;
   color: #040404; }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf"); }
+
+body {
+  background-color: #e8eeee; }
+
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px; }
+
+.border {
+  border: 1px solid black;
+  border-radius: .3em; }
+
+.nav-link:hover {
+  background-color: #efef9e;
+  transition: 0.5s;
+  border-radius: 5px; }
+
+.contenedor:hover .imagen {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  filter: opacity(0.8);
+  cursor: pointer; }
+
+.contenedor {
+  overflow: hidden; }
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF; }
+
 @media (max-width: 991px) {
   footer {
     padding: 40px; }
@@ -381,22 +400,10 @@ footer {
     footer .container {
       grid-template-columns: repeat(1, 1fr); } }
 
-.border {
-  border: 1px solid black;
-  border-radius: .3em; }
-
 comunSubtitulos, #tituloGral, #tituloBienvenida {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: large; }
-
-#tituloGral {
-  display: flex;
-  flex-direction: column;
-  justify-content: first baseline;
-  align-items: center;
-  padding: 10px;
-  color: #0564b3; }
 
 #leyendaBold {
   font-family: "Roboto", sans-serif;
@@ -419,6 +426,15 @@ comunSubtitulos, #tituloGral, #tituloBienvenida {
   padding: 10px;
   color: #0564b3;
   font-size: x-large; }
+
+#imagenTarjetas {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
 
 h1 {
   text-align: center;
@@ -471,11 +487,21 @@ li {
   font-size: large;
   font-weight: bolder; }
 
-#imagenTarjetas {
-  position: absolute;
-  width: 100px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; }
+th {
+  font-family: "Advent Pro", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: large; }
+
+td {
+  font-family: "Advent Pro", sans-serif;
+  text-align: center;
+  color: black;
+  font-size: large; }
+
+a {
+  text-decoration: none;
+  font-family: "Advent Pro", sans-serif;
+  color: black; }
+  a:hover {
+    color: #f1e61c; }

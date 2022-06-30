@@ -3,8 +3,9 @@
 
 @import "./base/reset";
 
-// @import "./layout/header";
+@import "./layout/header";
 @import "./layout/main";
+@import "./layout/footer";
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
@@ -19,6 +20,17 @@
 body{
     background-color:map-get($colors,principal);
 }
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.border {
+    border: 1px solid black;
+    border-radius: .3em;
+}  
 
 
 .nav-link:hover
@@ -36,141 +48,11 @@ body{
 }
 .contenedor {overflow:hidden;}
 
-
-
-
-
-
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
-
 .bigicon {
     font-size: 35px;
     color: #36A0FF;
 }
 
-footer{
-    font-family: $font-family-general;
-    display: grid;
-    justify-content: end;
-    align-content: end;
-    min-height: 50px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px 50px;
-    background-color:map-get($colors,principal);
-    .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-gap: 20px;
-        .secc {
-            h2 {
-               position: relative; 
-               color: #07639d;
-               font-weight: 500px;
-               margin-bottom: 15px;
-               &::before{             
-                    content: '';
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                    width: 70px;
-                    height: 3px;
-                    background-color: #dc951b;
-              }               
-            }
-            p {
-                color:#040404;
-            }
-          }    
-      }    
-  }
-
-  .redesSociales{
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-gap: 10px;
-    li {
-        list-style: none;
-        a {
-            display: inline-block;
-            width: 48px;
-            height: 48px;
-            background: #4fa4e9;
-            display: grid;
-            align-content: center;
-            justify-content: center;
-            text-decoration: none;
-            border-radius: 4px;
-            &:hover{
-                background: #74bbf1;
-            }            
-            .fa {
-                color:#fbf9f9;
-                font-size: 20px;
-            }            
-        }
-    }
-  }
-  
-  
-  .accesosDirectos{
-    position: relative;
-    li {
-        list-style: none;
-        a {
-            background: map-get($colors,principal);
-            color:#040404;
-            text-decoration: none;
-            margin-bottom: 10px;
-            display: inline-block;
-            &:hover{
-                color: #dc951b;
-            }            
-        }
-  
-    }
-  }
-  
-  .info{
-    position: relative;
-    li {
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        margin-bottom: 16px;
-        span {
-            color:#040404;
-            &:nth-child(1){
-                color:#040404;
-                font-size: 20px;
-            } 
-        }
-    }
-    a{
-        background-color: map-get($colors,principal);
-        color:#040404;
-        text-decoration: none;
-        &:hover{
-            color: #dc951b;
-        }          
-    }
-  }
-  
-  
-  .copyrightTexto{
-    width: 100%;
-    background: #718af7;
-    padding: 8px 100px;
-    text-align: center;
-    color:#040404;
-  }
-  
   @media (max-width: 991px) {
     footer{
         padding: 40px;
@@ -192,10 +74,6 @@ footer{
     }
   }
 
-.border {
-    border: 1px solid black;
-    border-radius: .3em;
-}  
 
 comunSubtitulos{
     font-family: $font-family-general;
@@ -204,15 +82,7 @@ comunSubtitulos{
  
 }  
 
-#tituloGral {
-    @extend comunSubtitulos;
-    display: flex;
-    flex-direction: column;
-    justify-content:first baseline;
-    align-items: center;
-    padding: 10px;
-    color: #0564b3;
-}  
+  
 
 #leyendaBold {
     font-family: $font-family-general;
@@ -225,7 +95,6 @@ comunSubtitulos{
 #leyendaComun {
     font-family: $font-family-alternativo;
     font-size:x-large;
-    // font-weight:bold;
     color:map-get($colors,letra-generica);
     margin: 5px;
 }
@@ -241,20 +110,28 @@ comunSubtitulos{
     font-size:x-large;
 }  
 
+#imagenTarjetas{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
 
 h1 {
     text-align: center;
     color: white;
     text-transform: uppercase;
     padding: 1px;
-    // font-family: "Raleway", cursive;
     font-family: $font-family-alternativo;
     font-weight: 100;
     position: relative;
     width: 100%;
     background: linear-gradient(to right, black, rgb(192, 189, 189), black);
     white-space: nowrap;
-  }
+}
 
   
   h2 {
@@ -300,13 +177,30 @@ h1 {
     font-size:large;
     font-weight: bolder;
   }
- 
-  #imagenTarjetas{
-    position: absolute;
-    width: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+
+  th{
+    font-family: $font-family-alternativo;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:large;
+  }
+
+
+  td{
+    font-family: $font-family-alternativo;
+    text-align: center;
+    color:map-get($colors,letra-generica);
+    font-size:large;
+  }
+
+
+  a{
+    text-decoration: none;
+    font-family: $font-family-alternativo;
+    color:map-get($colors,letra-generica);   
+    &:hover{
+        color: #f1e61c;
+    }      
 }
+ 
+ 

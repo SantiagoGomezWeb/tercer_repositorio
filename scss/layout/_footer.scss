@@ -1,0 +1,125 @@
+footer{
+    font-family: $font-family-general;
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 50px;
+    background-color:map-get($colors,principal);
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 20px;
+        .secc {
+            h2 {
+               position: relative; 
+               color: #07639d;
+               font-weight: 500px;
+               margin-bottom: 15px;
+               &::before{             
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 70px;
+                    height: 3px;
+                    background-color: #dc951b;
+              }               
+            }
+            p {
+                color:#040404;
+            }
+            li{
+                font-family: $font-family-alternativo;
+                color:map-get($colors,letra-generica);
+                font-size:large;
+              }            
+          }    
+      }    
+  }
+
+  .redesSociales{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+    li {
+        list-style: none;
+        a {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: #4fa4e9;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            &:hover{
+                background: #74bbf1;
+            }            
+            .fa {
+                color:#fbf9f9;
+                font-size: 20px;
+            }            
+        }
+    }
+  }
+  
+  
+  .accesosDirectos{
+    position: relative;
+    li {
+        list-style: none;
+        font-weight:normal;
+        text-align:left;
+        a {
+            background: map-get($colors,principal);
+            color:#040404;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+            &:hover{
+                color: #dc951b;
+            }            
+        }
+  
+    }
+  }
+  
+  .info{
+    position: relative;
+    li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        margin-bottom: 16px;
+        font-weight:normal;
+        span {
+            color:#040404;
+            &:nth-child(1){
+                color:#040404;
+                font-size: 20px;
+            } 
+        }
+    }
+    a{
+        background-color: map-get($colors,principal);
+        color:#040404;
+        text-decoration: none;
+        &:hover{
+            color: #dc951b;
+        }          
+    }
+  }
+  
+.copyrightTexto{
+    width: 100%;
+    background: #718af7;
+    padding: 8px 100px;
+    text-align: center;
+    color:#040404;
+}

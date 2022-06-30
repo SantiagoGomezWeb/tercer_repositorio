@@ -1,0 +1,9 @@
+#tituloGral {
+    @extend comunSubtitulos;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 10px;
+    color: #0564b3;
+}
