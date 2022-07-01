@@ -16,11 +16,11 @@ footer{
         grid-gap: 20px;
         .secc {
             h2 {
-               position: relative; 
-               color: #07639d;
-               font-weight: 500px;
-               margin-bottom: 15px;
-               &::before{             
+            position: relative; 
+            color: #07639d;
+            font-weight: 500px;
+            margin-bottom: 15px;
+            &::before{             
                     content: '';
                     position: absolute;
                     bottom: -5px;
@@ -28,7 +28,7 @@ footer{
                     width: 70px;
                     height: 3px;
                     background-color: #dc951b;
-              }               
+            }               
             }
             p {
                 color:#040404;
@@ -37,12 +37,12 @@ footer{
                 font-family: $font-family-alternativo;
                 color:map-get($colors,letra-generica);
                 font-size:large;
-              }            
-          }    
-      }    
-  }
+            }            
+        }    
+    }    
+}
 
-  .redesSociales{
+.redesSociales{
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(4, 50px);
@@ -68,10 +68,10 @@ footer{
             }            
         }
     }
-  }
-  
-  
-  .accesosDirectos{
+}
+
+
+.accesosDirectos{
     position: relative;
     li {
         list-style: none;
@@ -87,11 +87,10 @@ footer{
                 color: #dc951b;
             }            
         }
-  
     }
-  }
-  
-  .info{
+}
+
+.info{
     position: relative;
     li {
         display: grid;
@@ -114,8 +113,8 @@ footer{
             color: #dc951b;
         }          
     }
-  }
-  
+}
+
 .copyrightTexto{
     width: 100%;
     background: #718af7;
